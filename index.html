@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Naija Got Talent | Season 6 Auditions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top"><img src="images/logo.png" alt="Naija Got Talent logo" width="120" height="32"></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#about">About</a>
+    <a href="#judges">Judges</a>
+    <a href="#acts">Past stars</a>
+    <a href="#how">How it works</a>
+    <a href="#prizes">Prizes</a>
+    <a href="#cities">Cities</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn small" href="#audition">Audition</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-bg" src="images/hero.jpg" alt="">
+    <div class="beams" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="hero-in">
+      <p class="kicker">Season 6 auditions are open</p>
+      <h1>Your moment.<br>Your stage.</h1>
+      <p class="lead">Sing, dance, joke or amaze. Perform for our judges, win the crowd and take home ₦50 million.</p>
+      <div class="btns">
+        <a class="btn gold" href="#audition">Apply to audition</a>
+        <a class="btn ghost" href="#how">How it works</a>
+      </div>
+      <div class="count" aria-label="Time until auditions close">
+        <div><b id="d">00</b><small>Days</small></div>
+        <div><b id="h">00</b><small>Hours</small></div>
+        <div><b id="m">00</b><small>Minutes</small></div>
+        <div><b id="s">00</b><small>Seconds</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div><b>5</b><span>Seasons aired</span></div>
+    <div><b>12,000+</b><span>Acts auditioned</span></div>
+    <div><b>6</b><span>Audition cities</span></div>
+    <div><b>₦50m</b><span>Grand prize</span></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="split">
+      <img src="images/about.jpg" alt="Contestant performing on the show" loading="lazy">
+      <div>
+        <h2>Where talent gets its big break</h2>
+        <p class="mute">Naija Got Talent is open to every act, from singers and dancers to comedians, magicians and bands. No experience is needed and there is no age limit. If you can hold a stage for two minutes, we want to see you.</p>
+        <ul class="ticks">
+          <li>Open to all ages and all talents</li>
+          <li>Free to enter</li>
+          <li>Live shows watched by millions</li>
+        </ul>
+        <a class="btn gold" href="#audition">Enter now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JUDGES -->
+  <section id="judges" class="alt">
+    <div class="head"><h2>Meet the judges</h2><p>Four industry names who decide who goes through.</p></div>
+    <div class="judges">
+      <article class="j">
+        <img src="images/judge1.jpg" alt="Ada Okoye" loading="lazy">
+        <div class="jo"><b>Ada Okoye</b><small>Music producer</small><p>Twenty years behind the biggest records in West Africa. She listens for originality.</p></div>
+      </article>
+      <article class="j">
+        <img src="images/judge2.jpg" alt="Tunde Bello" loading="lazy">
+        <div class="jo"><b>Tunde Bello</b><small>Comedian</small><p>A sold-out touring comic who values timing and stage confidence above all.</p></div>
+      </article>
+      <article class="j">
+        <img src="images/judge3.jpg" alt="Ngozi Eze" loading="lazy">
+        <div class="jo"><b>Ngozi Eze</b><small>Choreographer</small><p>Award-winning choreographer who looks for discipline, rhythm and a fresh idea.</p></div>
+      </article>
+      <article class="j">
+        <img src="images/judge4.jpg" alt="Kofi Mensah" loading="lazy">
+        <div class="jo"><b>Kofi Mensah</b><small>Host and judge</small><p>Television host with a sharp eye for acts the audience will remember.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PAST STARS -->
+  <section id="acts">
+    <div class="head"><h2>Past stars</h2><p>Acts that won over the judges in earlier seasons.</p></div>
+    <div class="tabs" id="tabs">
+      <button class="on" data-f="all">All</button>
+      <button data-f="sing">Singing</button>
+      <button data-f="dance">Dance</button>
+      <button data-f="magic">Magic</button>
+    </div>
+    <div class="stage" id="stage">
+      <article class="act" data-c="sing"><img src="images/act1.jpg" alt="Amara performing" loading="lazy"><div class="t"><b>Amara, 17</b><small>Singer. Golden Buzzer</small></div></article>
+      <article class="act" data-c="dance"><img src="images/act2.jpg" alt="Lagos Flames dancing" loading="lazy"><div class="t"><b>Lagos Flames</b><small>Dance crew. Winners</small></div></article>
+      <article class="act" data-c="magic"><img src="images/act3.jpg" alt="Magic Dayo on stage" loading="lazy"><div class="t"><b>Magic Dayo</b><small>Magician. Finalist</small></div></article>
+      <article class="act" data-c="sing"><img src="images/act4.jpg" alt="The Kora Boys playing" loading="lazy"><div class="t"><b>The Kora Boys</b><small>Band. Semi-finalists</small></div></article>
+      <article class="act" data-c="dance"><img src="images/act5.jpg" alt="Abuja Royals dancing" loading="lazy"><div class="t"><b>Abuja Royals</b><small>Dance crew. Finalists</small></div></article>
+      <article class="act" data-c="sing"><img src="images/act6.jpg" alt="Chidi singing" loading="lazy"><div class="t"><b>Chidi, 24</b><small>Singer. Runner-up</small></div></article>
+      <article class="act" data-c="magic"><img src="images/act7.jpg" alt="Mind reader Sade" loading="lazy"><div class="t"><b>Sade the Mind Reader</b><small>Mentalist. Semi-finalist</small></div></article>
+      <article class="act" data-c="dance"><img src="images/act8.jpg" alt="Kano Kicks dancing" loading="lazy"><div class="t"><b>Kano Kicks</b><small>Street dance. Quarter-finalists</small></div></article>
+    </div>
+    <div class="pager" id="pager" aria-label="Past stars pages"></div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="alt">
+    <div class="head center"><h2>How it works</h2><p>Four steps from sign-up to the live final.</p></div>
+    <ol class="timeline">
+      <li><b>1</b><h3>Register online</h3><p>Fill in the form below and choose your talent category.</p></li>
+      <li><b>2</b><h3>Upload your video</h3><p>Send a clip of up to 2 minutes showing your best act.</p></li>
+      <li><b>3</b><h3>Audition live</h3><p>Shortlisted acts perform for the judges in their nearest city.</p></li>
+      <li><b>4</b><h3>Reach the finals</h3><p>Acts that get through compete on live TV for the grand prize.</p></li>
+    </ol>
+    <div class="needs">
+      <h3>Before you apply, have ready</h3>
+      <ul>
+        <li>A valid email address and phone number</li>
+        <li>Your audition video, up to 2 minutes</li>
+        <li>A parent or guardian's consent if you are under 18</li>
+        <li>A name for your act, if you are a group</li>
+      </ul>
+      <a class="btn gold" href="#audition">Start your application</a>
+    </div>
+  </section>
+
+  <!-- PRIZES -->
+  <section id="prizes">
+    <div class="head center"><h2>What you can win</h2><p>Big prizes for the top three acts.</p></div>
+    <div class="prizes">
+      <div class="p"><small>Runner-up</small><b>₦10m</b><span>Cash prize and a studio package</span></div>
+      <div class="p top"><small>Winner</small><b>₦50m</b><span>Cash prize, a recording deal and a trophy</span></div>
+      <div class="p"><small>Third place</small><b>₦5m</b><span>Cash prize and a media tour</span></div>
+    </div>
+  </section>
+
+  <!-- CITIES -->
+  <section id="cities" class="alt">
+    <div class="head"><h2>Audition cities and dates</h2><p>Pick the city closest to you.</p></div>
+    <div class="cities">
+      <div><b>Lagos</b><span>12 and 13 December</span><small>Eko Convention Centre</small></div>
+      <div><b>Abuja</b><span>16 December</span><small>International Conference Centre</small></div>
+      <div><b>Port Harcourt</b><span>19 December</span><small>Hotel and Events Centre</small></div>
+      <div><b>Kano</b><span>6 January</span><small>City Event Hall</small></div>
+      <div><b>Enugu</b><span>9 January</span><small>Arts Theatre</small></div>
+      <div><b>Ibadan</b><span>12 January</span><small>Cultural Centre</small></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="head"><h2>Frequently asked questions</h2></div>
+    <div class="faq">
+      <details><summary>Is there an age limit?</summary><p>No. Acts of all ages can enter. Anyone under 18 needs consent from a parent or guardian.</p></details>
+      <details><summary>Does it cost anything to audition?</summary><p>No. Entry is free.</p></details>
+      <details><summary>Can groups enter?</summary><p>Yes. Groups, bands and crews of any size are welcome.</p></details>
+      <details><summary>What can I perform?</summary><p>Any talent, as long as it is safe and suitable for a family audience.</p></details>
+      <details><summary>How long is my act?</summary><p>Up to 2 minutes at the audition stage.</p></details>
+    </div>
+  </section>
+
+  <!-- APPLY -->
+  <section id="audition" class="alt">
+    <div class="formcard">
+      <h2>Apply to audition</h2>
+      <p class="sub">Applications close 30 November 2026.</p>
+      <form id="form" novalidate>
+        <label>Full name<input name="name" required autocomplete="name"></label>
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+        <label>Talent
+          <select name="talent" required>
+            <option value="">Choose one</option>
+            <option>Singing</option><option>Dance</option><option>Magic</option><option>Comedy</option><option>Other</option>
+          </select>
+        </label>
+        <p class="msg" id="msg" role="status"></p>
+        <button class="btn gold" type="submit">Submit application</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SPONSORS -->
+  <section class="sponsors">
+    <p class="mute center">Proudly supported by</p>
+    <div class="logos">
+      <img src="images/sponsor1.png" alt="Sponsor 1" width="180" height="56" loading="lazy">
+      <img src="images/sponsor2.png" alt="Sponsor 2" width="180" height="56" loading="lazy">
+      <img src="images/sponsor3.png" alt="Sponsor 3" width="180" height="56" loading="lazy">
+      <img src="images/sponsor4.png" alt="Sponsor 4" width="180" height="56" loading="lazy">
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="fgrid">
+    <div class="fbrand">
+      <img src="images/logo.png" alt="Naija Got Talent logo" width="120" height="32">
+      <p>Nigeria's biggest stage for new talent.</p>
+    </div>
+    <div><b>Explore</b><a href="#about">About</a><a href="#judges">Judges</a><a href="#acts">Past stars</a><a href="#faq">FAQ</a></div>
+    <div><b>Take part</b><a href="#how">How it works</a><a href="#cities">Audition cities</a><a href="#prizes">Prizes</a><a href="#audition">Apply</a></div>
+    <div><b>Contact</b><a href="mailto:hello@example.com">hello@example.com</a><a href="tel:+2340000000000">+234 000 000 0000</a><span>Lagos, Nigeria</span></div>
+  </div>
+  <p class="copy">© 2026 Naija Got Talent. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
