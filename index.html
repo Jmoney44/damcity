@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Naija Got Talent | Season 6 Auditions</title>
+<title>Dance City | Auditions</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
 </head>
 <body>
 <header class="nav">
-  <a class="brand" href="#top"><img src="images/logo.png" alt="Naija Got Talent logo" width="120" height="32"></a>
+  <a class="brand" href="#top"><img src="images/logo.png" alt="Dance City" width="88" height="40"></a>
   <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   <nav id="menu">
     <a href="#about">About</a>
@@ -27,13 +27,18 @@
 
 <main id="top">
   <!-- HERO -->
-  <section class="hero">
-    <img class="hero-bg" src="images/hero.jpg" alt="">
-    <div class="beams" aria-hidden="true"><i></i><i></i><i></i></div>
-    <div class="hero-in">
-      <p class="kicker">Season 6 auditions are open</p>
-      <h1>Your moment.<br>Your stage.</h1>
-      <p class="lead">Sing, dance, joke or amaze. Perform for our judges, win the crowd and take home ₦50 million.</p>
+  <section class="hero" aria-roledescription="carousel" aria-label="Dance City banners">
+    <h1 class="sr">Dance City</h1>
+    <div class="slides" id="slides">
+      <img class="slide on" src="images/hero1.jpg" alt="Dance City with Denrele Edun. Movie, series, club raves, concert." width="1600" height="1199">
+      <img class="slide" src="images/hero2.jpg" alt="Dance City with Osha, pioneer of dance business in Nigeria." width="1600" height="1200">
+      <button class="arrow prev" id="prev" aria-label="Previous banner">‹</button>
+      <button class="arrow next" id="next" aria-label="Next banner">›</button>
+      <div class="dots" id="dots"></div>
+    </div>
+    <div class="hero-bar">
+      <p class="kicker">Auditions are open</p>
+      <p class="lead">Movie | Series | Club Raves | Concert</p>
       <div class="btns">
         <a class="btn gold" href="#audition">Apply to audition</a>
         <a class="btn ghost" href="#how">How it works</a>
@@ -57,19 +62,21 @@
 
   <!-- ABOUT -->
   <section id="about">
-    <div class="split">
-      <img src="images/about.jpg" alt="Contestant performing on the show" loading="lazy">
-      <div>
-        <h2>Where talent gets its big break</h2>
-        <p class="mute">Naija Got Talent is open to every act, from singers and dancers to comedians, magicians and bands. No experience is needed and there is no age limit. If you can hold a stage for two minutes, we want to see you.</p>
-        <ul class="ticks">
-          <li>Open to all ages and all talents</li>
-          <li>Free to enter</li>
-          <li>Live shows watched by millions</li>
-        </ul>
-        <a class="btn gold" href="#audition">Enter now</a>
-      </div>
+    <div class="head center"><h2>About Dance City</h2><p>Dare to be great!!!</p></div>
+    <div class="about">
+      <article>
+        <h3>Who we are</h3>
+        <p>We are talented professionals who believe in exhibiting creativity and originality in live and recorded events. Graced with decades of experience in the artistic creative industry, we produce exciting and memorable experiences for brands and individuals.</p>
+      </article>
+      <article>
+        <h3>The Dance City project</h3>
+        <p>The Dance City project is a theme that infuses dance, music, art, fashion and photography into an unforgettable experience that enhances the possibilities of life experiences.</p>
+      </article>
     </div>
+    <ul class="chips" aria-label="What Dance City covers">
+      <li>Dance</li><li>Music</li><li>Art</li><li>Fashion</li><li>Photography</li>
+    </ul>
+    <p class="center"><a class="btn gold" href="#contact">Connect with us</a></p>
   </section>
 
   <!-- JUDGES -->
@@ -205,17 +212,17 @@
   </section>
 </main>
 
-<footer>
+<footer id="contact">
   <div class="fgrid">
     <div class="fbrand">
-      <img src="images/logo.png" alt="Naija Got Talent logo" width="120" height="32">
-      <p>Nigeria's biggest stage for new talent.</p>
+      <img src="images/logo.png" alt="Dance City" width="88" height="40">
+      <p>Dance, music, art, fashion and photography in one unforgettable experience.</p>
     </div>
     <div><b>Explore</b><a href="#about">About</a><a href="#judges">Judges</a><a href="#acts">Past stars</a><a href="#faq">FAQ</a></div>
     <div><b>Take part</b><a href="#how">How it works</a><a href="#cities">Audition cities</a><a href="#prizes">Prizes</a><a href="#audition">Apply</a></div>
-    <div><b>Contact</b><a href="mailto:hello@example.com">hello@example.com</a><a href="tel:+2340000000000">+234 000 000 0000</a><span>Lagos, Nigeria</span></div>
+    <div><b>Connect with us</b><a href="https://www.thisisdancecity.com" target="_blank" rel="noopener">www.thisisdancecity.com</a><a href="https://www.instagram.com/thisisdancecitygc" target="_blank" rel="noopener">Instagram: thisisdancecitygc</a><a href="https://www.facebook.com/thisisdancecitygc" target="_blank" rel="noopener">Facebook: thisisdancecitygc</a></div>
   </div>
-  <p class="copy">© 2026 Naija Got Talent. All rights reserved.</p>
+  <p class="copy">© 2026 Dance City. All rights reserved.</p>
 </footer>
 <script src="script.js"></script>
 </body>

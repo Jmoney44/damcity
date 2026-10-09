@@ -82,3 +82,27 @@ form.addEventListener('submit', e => {
   msg.textContent = 'Application sent. We will email you with your audition date.';
   form.reset();
 });
+
+// Hero banner carousel
+const slides = [...document.querySelectorAll('.slide')];
+const dots = document.getElementById('dots');
+let cur = 0, timer;
+slides.forEach((_, i) => {
+  const b = document.createElement('button');
+  b.setAttribute('aria-label', 'Show banner ' + (i + 1));
+  b.addEventListener('click', () => { show(i); restart(); });
+  dots.appendChild(b);
+});
+function show(i) {
+  cur = (i + slides.length) % slides.length;
+  slides.forEach((s, k) => s.classList.toggle('on', k === cur));
+  [...dots.children].forEach((d, k) => d.classList.toggle('on', k === cur));
+}
+function restart() {
+  clearInterval(timer);
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) timer = setInterval(() => show(cur + 1), 5000);
+}
+document.getElementById('prev').addEventListener('click', () => { show(cur - 1); restart(); });
+document.getElementById('next').addEventListener('click', () => { show(cur + 1); restart(); });
+show(0);
+restart();
